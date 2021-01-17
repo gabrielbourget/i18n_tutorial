@@ -11,7 +11,10 @@ const i18nInitConfig = {
   whiteList: ['en', 'de'],
   interpolation: {
     escapeValue: false,
-  }
+  },
+  backend: {
+    loadPath: '/locales/{{lng}}/{{ns}}.json',
+  },
 };
 
 i18n
