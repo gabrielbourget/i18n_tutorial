@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import { useTranslation, Trans } from "react-i18next";
 
-function App() {
+// -> Original tutorial can be found here: https://www.robinwieruch.de/react-internationalization
+
+const App = () => {
   const { t, i18n } = useTranslation(['translation', 'welcome']);
 
   const changeLanguage = (code: string) => i18n.changeLanguage(code);
